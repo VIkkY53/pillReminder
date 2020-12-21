@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/reminderitem_background">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            android:background="@drawable/reminderitem_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:scaleY="1.2"
+                android:scaleX="1.2"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="81dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="184dp"
+                android:text="text"
+                android:textAlignment="center"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/texttime"
+                android:layout_width="81dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="500px"
+                android:layout_marginTop="200px"
+                android:text="texttime"
+                android:textAlignment="center"
+                android:textColor="#000" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>
